@@ -1,7 +1,3 @@
-# mstestsnippets README
-
-This is the README for your extension "mstestsnippets". After writing up a brief description, we recommend including the following sections.
-
 ## Features
 
 * Test Class
