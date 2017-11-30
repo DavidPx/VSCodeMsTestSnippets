@@ -53,6 +53,6 @@ In all cases the second tab stop is within the symbol body.
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.4
 
-Initial release.  Includes 4 snippets.
+Initial release for testing via the marketplace.  Includes 4 snippets.
