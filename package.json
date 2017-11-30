@@ -1,8 +1,8 @@
 {
     "name": "mstestsnippets",
-    "displayName": "MsTestSnippets",
+    "displayName": "MsTest Snippets",
     "description": "A collection of snippets to help writing MSTest tests.  Includes test method, test class, test initialize, and test cleanup.",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "davidpetersmke",
     "engines": {
         "vscode": "^1.18.0"

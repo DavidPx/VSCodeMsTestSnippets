@@ -49,6 +49,9 @@ In all cases the second tab stop is within the symbol body.
 
 ## Release Notes
 
+### 0.0.5
+Made display name more searchable.
+
 ### 0.0.4
 
 Initial release for testing via the marketplace.  Includes 4 snippets.
