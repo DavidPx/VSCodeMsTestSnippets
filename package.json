@@ -2,7 +2,7 @@
     "name": "mstestsnippets",
     "displayName": "MsTest Snippets",
     "description": "A collection of snippets to help writing MSTest tests.  Includes test method, test class, test initialize, and test cleanup.",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "davidpetersmke",
     "engines": {
         "vscode": "^1.18.0"
@@ -10,6 +10,7 @@
     "categories": [
         "Snippets"
     ],
+    "keywords": ["snippet", "mstest"],
     "contributes": {
         "snippets": [
             {
@@ -17,5 +18,9 @@
                 "path": "./snippets/snippets.json"
             }
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DavidPx/VSCodeMsTestSnippets.git"
     }
 }
