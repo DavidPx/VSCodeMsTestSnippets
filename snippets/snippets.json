@@ -1,0 +1,25 @@
+{
+        "Test Class": {
+            "prefix": "testclass",
+            "description": "MSTest Test Class",
+            "body": "[TestClass]\r\npublic class $TM_FILENAME_BASE\r\n{\r\n\t$2\r\n}"
+        },
+        "Test Method": {
+            "prefix": "testmethod",
+            "description": "MSTest Test Method",
+            "body": "[TestMethod]\r\npublic void ${1:MyTestMethod}()\r\n{\r\n\t$2\r\n}"
+        },
+    
+        "Test Initialization": {
+            "prefix": "testinit",
+            "description": "MSTest Test Initialization Method",
+            "body": "[TestInitialize]\r\npublic void Initialize$TM_FILENAME_BASE()\r\n{\r\n\t$2\r\n}"
+        },
+    
+        "Test Cleanup": {
+            "prefix": "testclean",
+            "description": "MSTest Test Cleanup Method",
+            "body": "[TestCleanup]\r\npublic void Cleanup$TM_FILENAME_BASE()\r\n{\r\n\t$2\r\n}"
+        }
+    
+    }
