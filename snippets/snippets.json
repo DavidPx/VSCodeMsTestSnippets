@@ -4,22 +4,38 @@
             "description": "MSTest Test Class",
             "body": "[TestClass]\r\npublic class $TM_FILENAME_BASE\r\n{\r\n\t$2\r\n}"
         },
+        "Test Class (with TestContext)": {
+            "scope": "csharp",
+            "prefix": "testclasswithcontext",
+            "description": "MSTest Test Class with TestContext",
+            "body": [
+                "[TestClass]",
+                "public class $TM_FILENAME_BASE",
+                "{",
+                "\tprivate static TestContext _testContext;",
+                "\tpublic TestContext TestContext { get => _testContext; set => _testContext = value; }\r\n",
+                "\t[ClassInitialize]",
+                "\tpublic static void ClassInitialize(TestContext testContext)",
+                "\t{",
+                "\t\t_testContext = testContext;",
+                "\t}\r\n",
+                "\t$2",
+                "}"
+            ]
+        },
         "Test Method": {
             "prefix": "testmethod",
             "description": "MSTest Test Method",
             "body": "[TestMethod]\r\npublic void ${1:MyTestMethod}()\r\n{\r\n\t$2\r\n}"
         },
-    
         "Test Initialization": {
             "prefix": "testinit",
             "description": "MSTest Test Initialization Method",
             "body": "[TestInitialize]\r\npublic void Initialize$TM_FILENAME_BASE()\r\n{\r\n\t$2\r\n}"
         },
-    
         "Test Cleanup": {
             "prefix": "testclean",
             "description": "MSTest Test Cleanup Method",
             "body": "[TestCleanup]\r\npublic void Cleanup$TM_FILENAME_BASE()\r\n{\r\n\t$2\r\n}"
         }
-    
     }
